@@ -13,7 +13,7 @@ type Operation struct {
 	CategoryID    *uuid.UUID `gorm:"type:uuid"`
 	Amount        float64    `gorm:"not null"`
 	OperationName string
-	Descroption   string
+	Discription   string
 	Date          time.Time `gorm:"not null"`
 	CreatedAt     time.Time `gorm:"autoCreateTime"`
 

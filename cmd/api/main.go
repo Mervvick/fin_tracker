@@ -2,6 +2,7 @@ package main
 
 import (
 	"fin_tracker/internal/config"
+	"fin_tracker/internal/models"
 	"fin_tracker/internal/router"
 	"log"
 
@@ -14,13 +15,23 @@ func main() {
 
 	db, err := gorm.Open(postgres.Open(cfg.DSN()), &gorm.Config{})
 	if err != nil {
-		log.Fatalf("Ошибка подключения к БД: %v", err)
+		log.Fatalf("DB connection errors: %v", err)
 	}
 
-	log.Println("Подключение к БД успешно")
+	err = db.AutoMigrate(
+		&models.User{},
+		&models.Account{},
+		&models.Category{},
+		&models.Operation{},
+	)
+	if err != nil {
+		log.Fatalf("Migrations errors: %v", err)
+	}
+
+	log.Println("Connected to db successfully. Migration completed")
 
 	r := router.SetupRouter(db)
 	if err := r.Run(":8080"); err != nil {
-		log.Fatalf("Ошибка запуска сервера: %v", err)
+		log.Fatalf("Server launch errors: %v", err)
 	}
 }

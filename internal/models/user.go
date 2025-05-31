@@ -15,5 +15,5 @@ type User struct {
 
 	Accounts   []Account   `gorm:"foreignKey:UserID"`
 	Categories []Category  `gorm:"foreignKey:UserID"`
-	Operation  []Operation `gorm:"foreignKey:UserID"`
+	Operations []Operation `gorm:"foreignKey:UserID"`
 }
