@@ -3,7 +3,7 @@ package handler
 import (
 	"net/http"
 
-	"mirea_finance_tracker/internal/service"
+	"fin_tracker/internal/service"
 
 	"github.com/gin-gonic/gin"
 )

@@ -25,8 +25,8 @@ func Load() *Config {
 	return &Config{
 		DBHost:     getEnv("DB_HOST", "localhost"),
 		DBPort:     getEnv("DB_PORT", "5433"),
-		DBUser:     getEnv("DB_USER", "user"),
-		DBPassword: getEnv("DB_PASSWORD", "user"),
+		DBUser:     getEnv("DB_USER", "admin"),
+		DBPassword: getEnv("DB_PASSWORD", "admin"),
 		DBName:     getEnv("DB_NAME", "fin_db"),
 		SSLMode:    getEnv("DB_SSLMODE", "disable"),
 	}
