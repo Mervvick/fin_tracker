@@ -1,0 +1,88 @@
+2025/06/30 17:38:45 [emerg] 1#1: host not found in upstream "app1:8080" in /etc/nginx/conf.d/default.conf:4
+2025/06/30 17:47:45 [emerg] 1#1: host not found in upstream "app1:8080" in /etc/nginx/conf.d/default.conf:4
+2025/06/30 18:21:37 [emerg] 1#1: cannot load certificate "/etc/nginx/ssl/self.crt": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/nginx/ssl/self.crt, r) error:10000080:BIO routines::no such file)
+2025/06/30 19:02:40 [emerg] 1#1: host not found in upstream "app3:8080" in /etc/nginx/conf.d/default.conf:6
+2025/06/30 21:46:12 [emerg] 1#1: cannot load certificate "/etc/nginx/ssl/self.crt": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/nginx/ssl/self.crt, r) error:10000080:BIO routines::no such file)
+2025/06/30 21:47:42 [emerg] 1#1: cannot load certificate "/etc/nginx/ssl/self.crt": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/nginx/ssl/self.crt, r) error:10000080:BIO routines::no such file)
+2025/06/30 22:04:52 [emerg] 1#1: host not found in upstream "app2:8080" in /etc/nginx/conf.d/default.conf:5
+2025/06/30 22:13:33 [notice] 1#1: using the "epoll" event method
+2025/06/30 22:13:33 [notice] 1#1: nginx/1.28.0
+2025/06/30 22:13:33 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2025/06/30 22:13:33 [notice] 1#1: OS: Linux 6.8.0-60-generic
+2025/06/30 22:13:33 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2025/06/30 22:13:33 [notice] 1#1: start worker processes
+2025/06/30 22:13:33 [notice] 1#1: start worker process 28
+2025/06/30 22:13:33 [notice] 1#1: start worker process 29
+2025/06/30 22:14:03 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2025/06/30 22:14:03 [notice] 29#29: gracefully shutting down
+2025/06/30 22:14:03 [notice] 29#29: exiting
+2025/06/30 22:14:03 [notice] 28#28: gracefully shutting down
+2025/06/30 22:14:03 [notice] 28#28: exiting
+2025/06/30 22:14:03 [notice] 28#28: exit
+2025/06/30 22:14:03 [notice] 29#29: exit
+2025/06/30 22:14:03 [notice] 1#1: signal 17 (SIGCHLD) received from 28
+2025/06/30 22:14:03 [notice] 1#1: worker process 28 exited with code 0
+2025/06/30 22:14:03 [notice] 1#1: signal 29 (SIGIO) received
+2025/06/30 22:14:03 [notice] 1#1: signal 17 (SIGCHLD) received from 29
+2025/06/30 22:14:03 [notice] 1#1: worker process 29 exited with code 0
+2025/06/30 22:14:03 [notice] 1#1: exit
+2025/06/30 22:17:13 [notice] 1#1: using the "epoll" event method
+2025/06/30 22:17:13 [notice] 1#1: nginx/1.28.0
+2025/06/30 22:17:13 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2025/06/30 22:17:13 [notice] 1#1: OS: Linux 6.8.0-60-generic
+2025/06/30 22:17:13 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2025/06/30 22:17:13 [notice] 1#1: start worker processes
+2025/06/30 22:17:13 [notice] 1#1: start worker process 28
+2025/06/30 22:17:13 [notice] 1#1: start worker process 29
+2025/06/30 22:19:22 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2025/06/30 22:19:22 [notice] 28#28: gracefully shutting down
+2025/06/30 22:19:22 [notice] 28#28: exiting
+2025/06/30 22:19:22 [notice] 29#29: gracefully shutting down
+2025/06/30 22:19:22 [notice] 29#29: exiting
+2025/06/30 22:19:22 [notice] 28#28: exit
+2025/06/30 22:19:22 [notice] 29#29: exit
+2025/06/30 22:19:22 [notice] 1#1: signal 17 (SIGCHLD) received from 29
+2025/06/30 22:19:22 [notice] 1#1: worker process 28 exited with code 0
+2025/06/30 22:19:22 [notice] 1#1: worker process 29 exited with code 0
+2025/06/30 22:19:22 [notice] 1#1: exit
+2025/06/30 22:19:43 [notice] 1#1: using the "epoll" event method
+2025/06/30 22:19:43 [notice] 1#1: nginx/1.28.0
+2025/06/30 22:19:43 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2025/06/30 22:19:43 [notice] 1#1: OS: Linux 6.8.0-60-generic
+2025/06/30 22:19:43 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2025/06/30 22:19:43 [notice] 1#1: start worker processes
+2025/06/30 22:19:43 [notice] 1#1: start worker process 27
+2025/06/30 22:19:43 [notice] 1#1: start worker process 28
+2025/07/01 03:10:47 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2025/07/01 03:10:47 [notice] 27#27: gracefully shutting down
+2025/07/01 03:10:47 [notice] 27#27: exiting
+2025/07/01 03:10:47 [notice] 27#27: exit
+2025/07/01 03:10:47 [notice] 28#28: gracefully shutting down
+2025/07/01 03:10:47 [notice] 28#28: exiting
+2025/07/01 03:10:47 [notice] 28#28: exit
+2025/07/01 03:10:47 [notice] 1#1: signal 17 (SIGCHLD) received from 27
+2025/07/01 03:10:47 [notice] 1#1: worker process 27 exited with code 0
+2025/07/01 03:10:47 [notice] 1#1: signal 29 (SIGIO) received
+2025/07/01 03:10:47 [notice] 1#1: signal 17 (SIGCHLD) received from 28
+2025/07/01 03:10:47 [notice] 1#1: worker process 28 exited with code 0
+2025/07/01 03:10:47 [notice] 1#1: exit
+2025/07/01 03:18:44 [notice] 1#1: using the "epoll" event method
+2025/07/01 03:18:44 [notice] 1#1: nginx/1.28.0
+2025/07/01 03:18:44 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2025/07/01 03:18:44 [notice] 1#1: OS: Linux 6.8.0-60-generic
+2025/07/01 03:18:44 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2025/07/01 03:18:44 [notice] 1#1: start worker processes
+2025/07/01 03:18:44 [notice] 1#1: start worker process 28
+2025/07/01 03:18:44 [notice] 1#1: start worker process 29
+2025/07/01 03:18:56 [warn] 28#28: *3 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/1/00/0000000001 while reading upstream, client: 172.27.0.1, server: localhost, request: "GET /swagger/swagger-ui-bundle.js HTTP/1.1", upstream: "http://172.27.0.5:8080/swagger/swagger-ui-bundle.js", host: "localhost:61765", referrer: "https://localhost:61765/swagger/index.html"
+2025/07/01 03:29:42 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2025/07/01 03:29:42 [notice] 28#28: gracefully shutting down
+2025/07/01 03:29:42 [notice] 29#29: gracefully shutting down
+2025/07/01 03:29:42 [notice] 29#29: exiting
+2025/07/01 03:29:42 [notice] 28#28: exiting
+2025/07/01 03:29:42 [notice] 28#28: exit
+2025/07/01 03:29:42 [notice] 29#29: exit
+2025/07/01 03:29:42 [notice] 1#1: signal 17 (SIGCHLD) received from 28
+2025/07/01 03:29:42 [notice] 1#1: worker process 28 exited with code 0
+2025/07/01 03:29:42 [notice] 1#1: worker process 29 exited with code 0
+2025/07/01 03:29:42 [notice] 1#1: exit

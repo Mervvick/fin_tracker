@@ -1,4 +1,4 @@
-package models
+package model
 
 import (
 	"time"
@@ -6,12 +6,13 @@ import (
 	"github.com/google/uuid"
 )
 
-type Account struct {
+type Category struct {
 	ID        uuid.UUID `gorm:"type:uuid;default:uuid_generate_v4();primaryKey"`
 	UserID    uuid.UUID `gorm:"type:uuid;not null"`
 	Name      string    `gorm:"not null"`
-	Balance   float64
+	Type      string    `gorm:"type:text;check:type IN ('income','expense')"`
+	IsDefault bool
 	CreatedAt time.Time `gorm:"autoCreateTime"`
 
-	Operation []Operation `gorm:"foreignKey:AccountID"`
+	Transactions []Transaction `gorm:"foreignKey:CategoryID"`
 }

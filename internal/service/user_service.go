@@ -1,7 +1,7 @@
 package service
 
 import (
-	"fin_tracker/internal/models"
+	"fin_tracker/internal/model"
 	"fin_tracker/internal/repository"
 )
 
@@ -13,6 +13,6 @@ func NewUserService(userRepo *repository.UserRepository) *UserService {
 	return &UserService{userRepo}
 }
 
-func (s *UserService) GetByID(id string) (*models.User, error) {
+func (s *UserService) GetByID(id string) (*model.User, error) {
 	return s.userRepo.FindByID(id)
 }

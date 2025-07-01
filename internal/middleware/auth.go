@@ -1,6 +1,7 @@
 package middleware
 
 import (
+	"fin_tracker/internal/config"
 	"fmt"
 	"net/http"
 	"strings"
@@ -9,7 +10,7 @@ import (
 	"github.com/golang-jwt/jwt/v5"
 )
 
-var jwtKey = []byte("secret-key") // для dev-режима; вынесем позже в конфиг
+var jwtKey = []byte(config.Load().JWTSecret)
 
 func JWTAuthMiddleware() gin.HandlerFunc {
 	return func(c *gin.Context) {

@@ -1,4 +1,4 @@
-package models
+package model
 
 import (
 	"time"
@@ -13,7 +13,8 @@ type User struct {
 	FullName     string
 	CreatedAt    time.Time `gorm:"autoCreateTime"`
 
-	Accounts   []Account   `gorm:"foreignKey:UserID"`
-	Categories []Category  `gorm:"foreignKey:UserID"`
-	Operations []Operation `gorm:"foreignKey:UserID"`
+	Accounts              []Account              `gorm:"foreignKey:UserID"`
+	Categories            []Category             `gorm:"foreignKey:UserID"`
+	Transactions          []Transaction          `gorm:"foreignKey:UserID"`
+	RecurringTransactions []RecurringTransaction `gorm:"foreignKey:UserID"`
 }

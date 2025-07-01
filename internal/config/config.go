@@ -14,21 +14,23 @@ type Config struct {
 	DBPassword string
 	DBName     string
 	SSLMode    string
+	JWTSecret  string
 }
 
 func Load() *Config {
 	err := godotenv.Load()
 	if err != nil {
-		log.Println(".env not found. Using set vars from config")
+		log.Println("Файл .env не найден, читаем переменные окружения напрямую")
 	}
 
 	return &Config{
 		DBHost:     getEnv("DB_HOST", "localhost"),
 		DBPort:     getEnv("DB_PORT", "5433"),
-		DBUser:     getEnv("DB_USER", "admin"),
-		DBPassword: getEnv("DB_PASSWORD", "admin"),
-		DBName:     getEnv("DB_NAME", "fin_db"),
+		DBUser:     getEnv("DB_USER", "finance_user"),
+		DBPassword: getEnv("DB_PASSWORD", "pass123"),
+		DBName:     getEnv("DB_NAME", "finance_db"),
 		SSLMode:    getEnv("DB_SSLMODE", "disable"),
+		JWTSecret:  os.Getenv("JWT_SECRET"),
 	}
 }
 
